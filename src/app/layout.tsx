@@ -1,6 +1,8 @@
-import './globals.css';
+import { NextAuthProvider } from '@/providers/auth';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+
+import './globals.css';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -18,8 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className={poppins.className}>{children}</body>
+    <html lang='pt-BR'>
+      <body className={poppins.className}>
+        <NextAuthProvider>{children}</NextAuthProvider>
+      </body>
     </html>
   );
 }
