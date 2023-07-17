@@ -5,7 +5,7 @@ import { signIn, signOut, useSession } from 'next-auth/react';
 import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
-import Logotipo from '../../../public/images/logo/logotipo.png';
+import Logotipo from 'public/images/logo/logotipo.png';
 
 export const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
