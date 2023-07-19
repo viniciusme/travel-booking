@@ -1,7 +1,9 @@
+import { TripSearch } from './components/TripSearch';
+
 export default function Home() {
   return (
     <main>
-      <p>Home Page</p>
+      <TripSearch />
     </main>
   );
 }
