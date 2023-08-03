@@ -58,7 +58,7 @@ export const Header = () => {
           />
 
           {menuIsOpen && (
-            <div className='absolute top-12 left-0 w-full h-full bg-white rounded-lg shadow-lg shadow-indigo-500/40 flex flex-col justify-center items-center '>
+            <div className='z-10 absolute top-12 left-0 w-full h-full bg-white rounded-lg shadow-lg shadow-indigo-500/40 flex flex-col justify-center items-center '>
               <button
                 className='text-primary text-sm font-semibold'
                 onClick={handleLogoutClick}
