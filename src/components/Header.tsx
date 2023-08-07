@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 import Logotipo from 'public/images/logo/logotipo.png';
+import Link from 'next/link';
 
 export const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -20,16 +21,20 @@ export const Header = () => {
 
   return (
     <div className='container mx-auto p-5 py-0 h-[93px] flex justify-between items-center'>
-      <div className='relative h-[32px] w-[182px]'>
-        <Image
-          src={Logotipo}
-          width={182}
-          height={32}
-          alt='logotipo travel booking'
-          blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAA'
-          placeholder='blur'
-        />
-      </div>
+      <Link href='/' passHref>
+        <div className='relative h-[32px] w-[182px]'>
+          <figure>
+            <Image
+              src={Logotipo}
+              width={182}
+              height={32}
+              alt='logotipo travel booking'
+              blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAA'
+              placeholder='blur'
+            />
+          </figure>
+        </div>
+      </Link>
 
       {status === 'unauthenticated' && (
         <button
