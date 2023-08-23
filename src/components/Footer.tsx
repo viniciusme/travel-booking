@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <div className='bg-walterWhite p-5 flex flex-col justify-center items-center'>
       <Link href='/' passHref>
-        <div className=' relative w-[133px] h-[23px]'>
+        <div className='relative w-[133px] h-[23px]'>
           <figure>
             <Image
               src={Logotipo}
